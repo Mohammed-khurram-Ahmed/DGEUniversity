@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    namespace = "com.gde.gov.ae.gdeuniversity"
+    namespace = "com.gde.university"
     compileSdk = 35
 
 
     defaultConfig {
-        applicationId = "com.gde.gov.ae.gdeuniversity"
+        applicationId = "com.gde.university"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -25,6 +25,10 @@ android {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        debug {
+            isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
