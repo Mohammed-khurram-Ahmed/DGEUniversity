@@ -24,3 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "GDEUniversity"
 include(":app")
+
+include(":core")
+include(":domain")
+include(":data")
+include(":feature:listing")
+include(":feature:details")

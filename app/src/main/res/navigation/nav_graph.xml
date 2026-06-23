@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listingFragment">
+
+    <fragment
+        android:id="@+id/listingFragment"
+        android:name="com.gde.university.feature.listing.ui.ListingFragment"
+        android:label="Listing">
+        <action
+            android:id="@+id/action_listing_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.gde.university.feature.details.ui.DetailsFragment"
+        android:label="Details">
+        <argument
+            android:name="university"
+            app:argType="com.gde.university.domain.model.UniversityModel" />
+    </fragment>
+
+</navigation>
