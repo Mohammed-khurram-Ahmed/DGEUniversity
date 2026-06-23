@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details_title">University Details</string>
+    <string name="label_state">State:</string>
+    <string name="label_country">Country:</string>
+    <string name="label_country_code">Country Code:</string>
+    <string name="label_domains">Domains:</string>
+    <string name="label_web_pages">Web Pages:</string>
+    <string name="button_refresh">Close &amp; Refresh List</string>
+    <string name="not_available">N/A</string>
+    <string name="n_a">N/A</string>
+</resources>

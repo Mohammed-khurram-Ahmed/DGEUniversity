@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="listing_title">Universities</string>
+    <string name="error_no_internet">Sorry, Unable refresh cache, No internet connection. Please check your network and try again.</string>
+    <string name="error_no_offline">No offline data available. Please connect internet and try again.</string>
+    <string name="error_general">Something went wrong, please try again later.</string>
+    <string name="retry">Retry</string>
+</resources>

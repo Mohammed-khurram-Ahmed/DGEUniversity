@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margin_standard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:layout_marginHorizontal="@dimen/margin_standard"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_standard">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_subtitle"
+                android:textStyle="bold"
+                tools:text="University Name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="#EEEEEE" />
+
+            <!-- State -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_state"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="State Name" />
+            </LinearLayout>
+
+            <!-- Country -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_country"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="United Arab Emirates" />
+            </LinearLayout>
+
+            <!-- Alpha Two Code -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_country_code"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="AE" />
+            </LinearLayout>
+
+            <!-- Domains -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_domains"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewDomains"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="mbzuai.ac.ae" />
+            </LinearLayout>
+
+            <!-- Web Pages -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_web_pages"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewWebPages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="https://mbzuai.ac.ae/" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_refresh"
+        android:layout_marginBottom="@dimen/margin_standard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
