@@ -17,7 +17,7 @@
 
 # ErrorCases
 
-# 1) First time launch app, No cahche data available, No internet availabe
+# 1) First time launch app, No cache data available, No internet availabe
 <img width="320" height="722" alt="image" src="https://github.com/user-attachments/assets/d7e4567b-f0f7-4cbb-98f7-6a4f3ea80e7b" />
 
 # 2) Cache Data available, but No Internet to refresh forced cache. 
