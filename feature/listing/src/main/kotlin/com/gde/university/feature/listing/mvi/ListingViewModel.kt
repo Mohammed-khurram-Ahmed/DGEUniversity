@@ -7,6 +7,8 @@ import com.gde.university.domain.model.UniversityModel
 import com.gde.university.domain.usecase.GetUniversitiesUseCase
 import com.gde.university.feature.listing.R
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
@@ -35,6 +37,7 @@ class ListingViewModel @Inject constructor(
 
     private fun loadData(forceRefresh: Boolean = false) {
         getUniversitiesUseCase(forceRefresh)
+            .flowOn(Dispatchers.IO)
             .onEach { result ->
                 // here we are  Avoiding processing the same result twice if it's identical
                 if (result == lastResult) return@onEach

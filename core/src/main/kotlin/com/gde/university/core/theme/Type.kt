@@ -1,4 +1,4 @@
-package com.gde.university.theme
+package com.gde.university.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
