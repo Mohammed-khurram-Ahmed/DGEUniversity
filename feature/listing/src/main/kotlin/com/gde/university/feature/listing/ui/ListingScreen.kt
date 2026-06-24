@@ -217,10 +217,10 @@ fun UniversityDummyItem() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, apiLevel = 36)
 @Composable
 fun ListingScreenPreview() {
-    MaterialTheme {
+    GDEUniversityTheme {
         ListingContent(
             state = ListingState(
                 universities = sampleUniversities
@@ -230,15 +230,26 @@ fun ListingScreenPreview() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, apiLevel = 36)
 @Composable
 fun ListingScreenLoadingPreview() {
-    MaterialTheme {
+    GDEUniversityTheme {
         ListingContent(
             state = ListingState(
                 isLoading = true
             ),
             onIntent = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, apiLevel = 36)
+@Composable
+fun ErrorViewPreview() {
+    GDEUniversityTheme {
+        ErrorView(
+            message = "Something went wrong. Please try again later.",
+            onRetry = {}
         )
     }
 }

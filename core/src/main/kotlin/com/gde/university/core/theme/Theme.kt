@@ -1,4 +1,4 @@
-package com.gde.university.theme
+package com.gde.university.core.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -9,7 +9,6 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import com.gde.university.core.theme.*
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -27,8 +26,7 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun GDEUniversityTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
